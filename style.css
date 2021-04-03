@@ -1,3 +1,31 @@
+/* ============================================ spinner ========================================================= */
+.loading{
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    margin-top: 21%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-top: 5px solid #b98bbc;
+    border-left: 3px solid #b98bbc;
+    border-bottom: 1px solid #b98bbc;
+    border-right: transparent;
+    animation: spinner 0.8s linear infinite;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.content{
+    display: none;
+}
+
 
 .header
 {
